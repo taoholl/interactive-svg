@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+#eyes {
+  transform-origin: bottom;
+  animation: side 1.5s infinite alternate;
+}
+
+@keyframes side {
+  from {
+    transform: translate(20px);
+  }
+
+
+to {
+  transform: translate(-20px);
+}
+
+}
+
+#ears {
+
+  transition: all .5s linear;
+}
+
+#full-head:hover #ears {
+  transform: translate(0px,-20px);
+}
